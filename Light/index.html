@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Click Button to Change Image with JS</h2>
+
+<p>JavaScript can change the value of HTML image attribute with onclick.</p>
+
+<p>Here, clicking a button produces different images of a light bulb. All you need to do is have the image files uploaded
+    into the project folder along with this index.html file and it will work in a browser. 
+</p>
+
+<p>The onclick JavaScript event occurs when the user clicks on an element.
+    It runs a specified line of code when you click a HTML object that has the onclick attribute.
+    The JavaScript onclick functions can be triggered by object.onclick or object.addEventListener.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<p>Here is the JS code running behind this:</p>
+<p> 1. use "button onclick="document.getElementById('myImage').src='pic_bulbon.gif'" tags around the "Turn on the light" button
+<br>
+<br>
+    2. insert code: img id="myImage" src="pic_bulboff.gif" style="width:100px" -- this is so the bulb's default state when not clicked is "off"
+<br>If you changed this so the source was "pic_bulbon.gif" the default state would be the bulb is turned on.
+<br>
+    3. use "button onclick="document.getElementById('myImage').src='pic_bulboff.gif'" tags around the "Turn off the light button</p>
+<br>
+<br>
+</body>
+</html>
